@@ -11,6 +11,9 @@
         <li>
             <span>${note.text}</span>
             <a href="/notes/edit/${note.id}">Edit</a>
+            <form action="/notes/delete/${note.id}" method="post" style="display: inline;">
+                <button type="submit">Delete</button>
+            </form>
         </li>
     </#list>
 </ul>

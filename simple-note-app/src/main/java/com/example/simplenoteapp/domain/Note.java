@@ -14,6 +14,7 @@ public class Note {
 
     private String text;
 
+
     public Long getId() {
         return id;
     }
@@ -29,4 +30,6 @@ public class Note {
     public void setText(String text) {
         this.text = text;
     }
+
+
 }
