@@ -1,4 +1,4 @@
-package com.example.simplenoteapp.contloller;
+package com.example.simplenoteapp.controller;
 
 import com.example.simplenoteapp.domain.Note;
 import com.example.simplenoteapp.repositories.NoteRepository;
