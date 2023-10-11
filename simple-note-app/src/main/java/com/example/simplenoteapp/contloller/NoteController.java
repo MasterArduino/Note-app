@@ -39,9 +39,13 @@ public class NoteController {
     // Обработка создания заметки
     @PostMapping("/create")
     public String create(@ModelAttribute Note note) {
-        noteRepository.save(note);
+        if (note.getText() != null && !note.getText().isEmpty()) {
+            noteRepository.save(note);
+            System.out.println("Note saved: " + note.getId());
+        }
         return "redirect:/notes/";
     }
+
 
     // Отображение формы редактирования заметки
     @GetMapping("/edit/{id}")
